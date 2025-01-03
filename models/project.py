@@ -1,17 +1,13 @@
 from dataclasses import dataclass
 from datetime import datetime
-
+from typing import List
+from sprint import Sprint
 
 @dataclass
-class Task:
-    id: str
+class Project:
     name: str
     description: str
-    category: str
-    status: str
-    priority: int
+    sprints: List[Sprint]
     deadline: datetime
     created_at: datetime
     updated_at: datetime
-
-

@@ -1,11 +1,10 @@
 from dataclasses import dataclass
 from datetime import datetime
 from typing import List
-from task import Task
+from models.task import Task
 
 @dataclass
 class Sprint:
-    id: str
     name: str
     goal: str
     tasks: List[Task]
